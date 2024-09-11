@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using TaskManager.ViewModels;
 
 namespace TaskManager
 {
@@ -23,6 +24,17 @@ namespace TaskManager
         public MainWindow()
         {
             InitializeComponent();
+            DataContext = ViewModel;// Устанавливаем ViewModel как контекст данных
+        }
+        public TaskViewModel ViewModel { get; } = new TaskViewModel();
+
+        private void SearchTextBox_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Enter)
+            {
+                // Вызовите метод поиска в ViewModel, передав текст из SearchTextBox
+                ViewModel.SearchTasks(SearchTextBox.Text);
+            }
         }
     }
 }

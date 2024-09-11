@@ -6,7 +6,55 @@
         xmlns:local="clr-namespace:TaskManager"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
+    <Window.Resources>
+        <local:BoolToVisibilityConverter x:Key="boolToVisibilityConverter"/>
+    </Window.Resources>
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- Строка поиска -->
+        <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="10">
+            <Label Content="Поиск: "/>
+            <TextBox x:Name="SearchTextBox" 
+                     Width="200"
+                     Text="{Binding SearchText, UpdateSourceTrigger=PropertyChanged}"
+                     KeyDown="SearchTextBox_KeyDown" />
+        </StackPanel>
+
+        <ComboBox Grid.Row="0" Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="10" Name="sortComboBox"
+                  ItemsSource="{Binding SortCategories}">
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding}"/>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
+
+        <!-- Дополнительный ComboBox для выбора категории -->
+        <ComboBox Grid.Row="0" Grid.Column="1" Name="categoryComboBox" Margin="10"
+                  Visibility="{Binding IsCategorySelected, Mode=OneWay, Converter={StaticResource boolToVisibilityConverter}}"
+                  ItemsSource="{Binding Categories}"
+                  SelectedItem="{Binding SelectedCategory, Mode=TwoWay}">
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding}"/>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
+
+        <!-- Список задач -->
+        <DataGrid Grid.Row="1" 
+                  ItemsSource="{Binding Tasks}"
+                  AutoGenerateColumns="True" Margin="10"
+                  IsReadOnly="True">
+        </DataGrid>
     </Grid>
 </Window>

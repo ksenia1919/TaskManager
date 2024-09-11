@@ -1,0 +1,16 @@
+C:\Users\liton\Desktop\Clone reposetory TaskManager\TaskManager\TaskManager\TaskManager\bin\Debug\TaskManager.exe.config
+C:\Users\liton\Desktop\Clone reposetory TaskManager\TaskManager\TaskManager\TaskManager\bin\Debug\TaskManager.exe
+C:\Users\liton\Desktop\Clone reposetory TaskManager\TaskManager\TaskManager\TaskManager\bin\Debug\TaskManager.pdb
+C:\Users\liton\Desktop\Clone reposetory TaskManager\TaskManager\TaskManager\TaskManager\obj\Debug\TaskManager.csproj.AssemblyReference.cache
+C:\Users\liton\Desktop\Clone reposetory TaskManager\TaskManager\TaskManager\TaskManager\obj\Debug\MainWindow.g.cs
+C:\Users\liton\Desktop\Clone reposetory TaskManager\TaskManager\TaskManager\TaskManager\obj\Debug\App.g.cs
+C:\Users\liton\Desktop\Clone reposetory TaskManager\TaskManager\TaskManager\TaskManager\obj\Debug\TaskManager_MarkupCompile.cache
+C:\Users\liton\Desktop\Clone reposetory TaskManager\TaskManager\TaskManager\TaskManager\obj\Debug\TaskManager_MarkupCompile.lref
+C:\Users\liton\Desktop\Clone reposetory TaskManager\TaskManager\TaskManager\TaskManager\obj\Debug\MainWindow.baml
+C:\Users\liton\Desktop\Clone reposetory TaskManager\TaskManager\TaskManager\TaskManager\obj\Debug\TaskManager.g.resources
+C:\Users\liton\Desktop\Clone reposetory TaskManager\TaskManager\TaskManager\TaskManager\obj\Debug\TaskManager.Properties.Resources.resources
+C:\Users\liton\Desktop\Clone reposetory TaskManager\TaskManager\TaskManager\TaskManager\obj\Debug\TaskManager.csproj.GenerateResource.cache
+C:\Users\liton\Desktop\Clone reposetory TaskManager\TaskManager\TaskManager\TaskManager\obj\Debug\TaskManager.csproj.CoreCompileInputs.cache
+C:\Users\liton\Desktop\Clone reposetory TaskManager\TaskManager\TaskManager\TaskManager\obj\Debug\TaskManager.exe
+C:\Users\liton\Desktop\Clone reposetory TaskManager\TaskManager\TaskManager\TaskManager\obj\Debug\TaskManager.pdb
+C:\Users\liton\Desktop\Clone reposetory TaskManager\TaskManager\TaskManager\TaskManager\obj\Debug\GeneratedInternalTypeHelper.g.cs
